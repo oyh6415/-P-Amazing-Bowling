@@ -124,8 +124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba48e2e8a0ac7434eb6d630c81c634a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 0}
-  explosionAudio: {fileID: 0}
+  whatIsProp:
+    serializedVersion: 2
+    m_Bits: 2048
+  explosionParticle: {fileID: 5216902405799110074}
+  explosionAudio: {fileID: 6881331000238137983}
   maxDamage: 100
   explosionForce: 1000
   lifeTime: 10
@@ -232,6 +235,18 @@ PrefabInstance:
 --- !u!4 &5392905598367787130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5204257406284933995, guid: 122cbd081acdd364b9292a50bda0af9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 211193746864358161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5216902405799110074 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5370655259895735979, guid: 122cbd081acdd364b9292a50bda0af9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 211193746864358161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6881331000238137983 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6742215807007301998, guid: 122cbd081acdd364b9292a50bda0af9d,
     type: 3}
   m_PrefabInstance: {fileID: 211193746864358161}
   m_PrefabAsset: {fileID: 0}

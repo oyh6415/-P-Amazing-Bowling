@@ -9,7 +9,8 @@ AudioSource:
   m_GameObject: {fileID: 5886365294130325322}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5571452137088197302, guid: a629220f4f69adb4898290be70964617,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 9c32617ebf03b4ac3b3f521750435944, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -105,7 +106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
       propertyPath: m_Name
-      value: SmallExplosion
+      value: SmallExplosion Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4361801158873524, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
       propertyPath: m_LocalPosition.x

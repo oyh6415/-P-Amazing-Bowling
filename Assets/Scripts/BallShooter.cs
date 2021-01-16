@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class BallShooter : MonoBehaviour
 {
+    public CamFollow cam;
+
     public Rigidbody ball;
     public Transform firePos; //볼이 생성되는 위치
     public Slider powerSlider;
@@ -70,5 +72,7 @@ public class BallShooter : MonoBehaviour
         shootingAudio.Play();
 
         currentForce = minForce;
+
+        cam.SetTarget(ballInstance.transform, CamFollow.State.Tracking);
     }
 }

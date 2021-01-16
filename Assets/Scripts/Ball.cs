@@ -35,6 +35,9 @@ public class Ball : MonoBehaviour
         explosionParticle.transform.parent = null; //파티클 자식에서 떼어냄
         explosionParticle.Play();
         explosionAudio.Play();
+
+        GameManager.instance.OnBallDestroy();
+
         Destroy(explosionParticle.gameObject, explosionParticle.duration);
         Destroy(gameObject);
     }
@@ -50,5 +53,10 @@ public class Ball : MonoBehaviour
         damage = Mathf.Max(0, damage); //데미지가 -일 때를 대비해서
 
         return damage;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.OnBallDestroy();
     }
 }

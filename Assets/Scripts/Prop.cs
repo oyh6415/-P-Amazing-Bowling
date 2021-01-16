@@ -16,6 +16,9 @@ public class Prop : MonoBehaviour
             ParticleSystem instance= Instantiate(explosionParticle,transform.position,transform.rotation);
             AudioSource explosionAudio = instance.GetComponent<AudioSource>();
             explosionAudio.Play();
+
+            GameManager.instance.AddScore(score);
+
             Destroy(instance.gameObject, instance.duration);
             gameObject.SetActive(false);
         }

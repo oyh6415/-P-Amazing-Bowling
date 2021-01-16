@@ -230,6 +230,12 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6742215807007301998, guid: 122cbd081acdd364b9292a50bda0af9d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5571452137088197302, guid: a629220f4f69adb4898290be70964617,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122cbd081acdd364b9292a50bda0af9d, type: 3}
 --- !u!4 &5392905598367787130 stripped
